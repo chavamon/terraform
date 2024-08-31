@@ -7,13 +7,13 @@ module "ec2" {
 }
 
 module "ec2-front" {
-  source = "modules/ec2-reactjs"
+  source = "./modules/ec2-reactjs"
 }
 
 module "alb" {
-  source = "modules/alb"
+  source = "./modules/alb"
 }
 
 module "mysql" {
-  source = "modules/mysql"
+  source = "./modules/mysql"
 }
